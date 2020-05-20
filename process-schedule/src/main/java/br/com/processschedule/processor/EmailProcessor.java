@@ -21,6 +21,7 @@ public class EmailProcessor {
 	
 	
 	public void executar() throws InterruptedException {
+		
 		List<Pedido> pedidos = pedidoRepository.findAll();
 		
 		if(pedidos.size()<= 0 ) {
